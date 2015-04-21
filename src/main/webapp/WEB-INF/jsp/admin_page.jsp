@@ -45,7 +45,7 @@
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-th"></span>&nbsp部门管理</div>
 		<ul id="part-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">查看部门</a></li>
+            <li><a href="#" target="show_Content">查看部门门门们</a></li>
             <li><a href="#" target="show_Content">添加部门</a></li>
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-education"></span> &nbsp专业班级管理</div>
