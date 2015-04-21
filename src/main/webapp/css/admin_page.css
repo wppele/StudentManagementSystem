@@ -1,0 +1,91 @@
+body{
+	float:left;
+	width:100%;
+	background:url("/StudentSystem/resources/black-Linen.png");
+}
+.brand{
+	float:left;
+	margin-left:1em;
+	margin-top:0.5em;
+	text-decoration: none;
+	text-shadow: none;
+}
+a:HOVER,a:LINK{
+	text-decoration: none;
+	text-shadow: none;
+}
+.brand .first{
+	color:#cccccc;
+	font-style: italic;
+	font-size: 1.5em;
+}
+.brand .second{
+	color:#ffffff;
+	font-weight:bold;
+	font-size: 1.5em;
+}
+.btn-userInfo{
+	float:right;
+	color:#ffffff;
+	margin-top:1em;
+	margin-right:2em;
+}
+.btn-userInfo .dropdown-menu{
+	position:absolute;
+	margin-top:-0.5em;
+	margin-left:88%;
+}
+.btn-userInfo .dropdown-menu li{
+}
+#sidebar-nav{
+	float:left;
+	width:18%;
+	min-width:135px;
+	margin-top:-1em;
+}
+#sidebar-nav .sidebar-title{
+	height:38px;
+	color:#ddd;
+	padding-top:0.5em;
+	padding-left:1em;
+	border-top:1px solid #4d4d4d;
+	border-bottom:1px solid #0d0d0d;
+	background: #333333;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #343232), color-stop(1, #322828))
+    background: -ms-linear-gradient(bottom, #333333, #404040);
+    background: -moz-linear-gradient(center bottom, #333333 0%, #404040 100%);
+    background: -o-linear-gradient(bottom, #333333, #404040);
+    filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#404040',EndColorStr='#333333')";
+}
+#sidebar-nav input{
+	margin-bottom:0.5em;
+}
+.nav.nav-list.collapse.in{
+	display: none;
+}
+#context-show{
+	float:right;
+	margin-top:-1em;
+	margin-right:1em;
+	height:60em;
+	width:80%;
+	background: #fff;
+}
+/* Tweaks for mobile */
+@media (max-width: 745px) {
+	#sidebar-nav{
+	width:100%;
+	}
+	#context-show{
+		float:right;
+		margin-top:1em;
+		margin-right:-0.1em;
+		width:100%;
+	}
+}
+.show_Content{
+	width:100%;
+	height:100%;
+	frameborder:1;
+}

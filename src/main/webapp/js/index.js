@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('#dropdown-toggle').click(function(){
+		$('.dropdown-menu').toggle();
+	});
+	$('.sidebar-title').click(function(){
+		$('.in').hide();
+		$(this).next().show();
+	});
+});

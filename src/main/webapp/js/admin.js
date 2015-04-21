@@ -1,0 +1,18 @@
+$(document).ready(function(){
+	$('#dropdown-toggle').click(function(){
+		$('.dropdown-menu').toggle();
+	});
+	$('.sidebar-title').mouseenter(function(){
+		$(this).css({"background-color":"#4d4d4d"});
+	});
+	$('.sidebar-title').mouseleave(function(){
+		$(this).css({"background-color":"#333333"});
+	});
+	$('.sidebar-title').click(function(){
+		$('.in').hide();
+		$(this).next().show();
+	});
+	$('#dropdownMenu2').click(function(){
+		$('.dropdown-menu').toggle();
+	});
+});
