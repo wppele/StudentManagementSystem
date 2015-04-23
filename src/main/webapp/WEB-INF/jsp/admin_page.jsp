@@ -45,38 +45,38 @@
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-th"></span>&nbsp部门管理</div>
 		<ul id="part-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">查看部试试</a></li>
-            <li><a href="#" target="show_Content">添加部门</a></li>
+            <li><a href="/StudentSystem/show_department" target="show_Content">查看部门</a></li>
+            <li><a href="/StudentSystem/add_department" target="show_Content">添加部门</a></li>
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-education"></span> &nbsp专业班级管理</div>
 		<ul id="member-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">专业班级信息查看</a></li>
-            <li><a href="#" target="show_Content">添加专业班级</a></li>
+            <li><a href="/StudentSystem/show_proclass" target="show_Content">专业班级信息查看</a></li>
+            <li><a href="/StudentSystem/add_proclass" target="show_Content">添加专业班级</a></li>
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-blackboard"></span> &nbsp学生信息管理</div>
 		<ul id="studentinfo-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">学生信息查看</a></li>
+            <li><a href="/StudentSystem/show_studentinfo" target="show_Content">学生信息查看</a></li>
             <li><a href="/StudentSystem/add_studentinfo" target="show_Content">新添学生信息</a></li>
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-scissors"></span> &nbsp物资管理</div>
 		<ul id="life-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">物资查看</a></li>
-            <li><a href="#" target="show_Content">物资添加</a></li>
-            <li><a href="#" target="show_Content">物资申请通知</a></li>
-            <li><a href="#" target="show_Content">物资日志</a></li>
+            <li><a href="/StudentSystem/show_goods" target="show_Content">物资查看</a></li>
+            <li><a href="/StudentSystem/add_goods" target="show_Content">物资添加</a></li>
+            <li><a href="/StudentSystem/notice_goods" target="show_Content">物资申请通知</a></li>
+            <li><a href="/StudentSystem/log_goods" target="show_Content">物资日志</a></li>
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-tree-deciduous"></span> &nbsp学生会日常工作</div>
 		<ul id="goods-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">值班表查看</a></li>
-            <li><a href="#" target="show_Content">值班表上传</a></li>
-            <li><a href="#" target="show_Content">会议纪要查看</a></li>
-            <li><a href="#" target="show_Content">会议纪要上传</a></li>
+            <li><a href="/StudentSystem/show_dutyschedule" target="show_Content">值班表查看</a></li>
+            <li><a href="/StudentSystem/add_dutyschedule" target="show_Content">值班表上传</a></li>
+            <li><a href="/StudentSystem/show_meetingsummary" target="show_Content">会议纪要查看</a></li>
+            <li><a href="/StudentSystem/add_meetingsummary" target="show_Content">会议纪要上传</a></li>
         </ul>
 		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-floppy-disk"></span> &nbsp资料库管理</div>
 		<ul id="data-menu" class="nav nav-list collapse in">
             <li><a href="#" target="show_Content">资料类别</a></li>
-            <li><a href="#" target="show_Content">查看资料</a></li>
-            <li><a href="#" target="show_Content">上传资料</a></li>
+            <li><a href="/StudentSystem/show_historydata" target="show_Content">查看资料</a></li>
+            <li><a href="/StudentSystem/add_historydata" target="show_Content">上传资料</a></li>
         </ul>
 	</div>	
 	<div id="context-show" class="panel panel-default" >
