@@ -112,16 +112,17 @@ margin-left:14%;
 			</div>
 			<br>
 			<div class="input-group">
-				<span class="input-group-addon">个人描述</span> <input type="text"
-					class="form-control" placeholder="曾获荣誉，先进事迹等"
-					aria-describedby="basic-addon1">
+				<span class="input-group-addon">个人描述</span> 
+				<textarea rows="5" cols="50" placeholder="曾获荣誉，先进事迹等">
+					
+				</textarea>
 			</div>
 			<br>
-			<div class="input-group">
+<!-- 	备注		<div class="input-group">
 				<span class="input-group-addon">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp备注</span>
 				<input type="text" class="form-control" placeholder="备注"
 					aria-describedby="basic-addon1">
-			</div>
+			</div> -->
 		</div>
 	</div>
 </body>
