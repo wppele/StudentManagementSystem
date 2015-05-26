@@ -16,7 +16,8 @@ import org.hibernate.annotations.GenericGenerator;
 public class StudentInfo implements Serializable{
 
 private static final long serialVersionUID = 1L;
-private String stu_id;//主键
+//private String stu_id;//主键
+private int stu_id;
 private String studentId;//学号
 private String stu_name;//姓名
 private long class_id;//专业班级
@@ -29,12 +30,14 @@ private String stu_address;//家庭住址
 private String stu_description;//其他描述
 private String stu_note;//备注
 @Id
-@GenericGenerator(name="idGenerator",strategy="uuid")
-@GeneratedValue(generator="idGenerator")
-public String getStu_id() {
+/*@GeneratedValue(generator="idGenerator")
+@GenericGenerator(name="idGenerator",strategy="org.hibernate.id.UUIDGenerator")
+@Column(length=36)*/
+@GeneratedValue
+public int getStu_id() {
 	return stu_id;
 }
-public void setStu_id(String stu_id) {
+public void setStu_id(int stu_id) {
 	this.stu_id = stu_id;
 }
 @Column(length=20)
@@ -110,4 +113,15 @@ public String getStu_note() {
 public void setStu_note(String stu_note) {
 	this.stu_note = stu_note;
 }
+@Override
+public String toString() {
+	return "StudentInfo [stu_id=" + stu_id + ", studentId=" + studentId
+			+ ", stu_name=" + stu_name + ", class_id=" + class_id
+			+ ", stu_telphone=" + stu_telphone + ", stu_parentphone="
+			+ stu_parentphone + ", stu_sex=" + stu_sex + ", stu_picture="
+			+ stu_picture + ", stu_position=" + stu_position + ", stu_address="
+			+ stu_address + ", stu_description=" + stu_description
+			+ ", stu_note=" + stu_note + "]";
+}
+
 }

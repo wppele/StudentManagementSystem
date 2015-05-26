@@ -5,9 +5,11 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.student.entity.StudentInfo;
 import com.student.entity.Users;
 import com.student.util.StaticSql;
 
@@ -33,12 +35,23 @@ public class UsersDao {
 		 }
 		return -1;
 	}
-	//用户查看返回用户列表
+	//管理员页面中，用户查看返回用户列表
 	public List<Users> findAll(){
 		Query query=getCurSession().createQuery(StaticSql.FINDALL_USERS_SQL);
 		List<Users> users_tmp=query.list();
 		return users_tmp;
 	}
-	//添加用户
-	///public 
+	//管理员页面中，学生信息添加
+	public boolean addStudentInfo(StudentInfo studentInfo){
+		try {
+			Session addinfoSession=getCurSession();
+			addinfoSession.save(studentInfo);
+			System.out.println(studentInfo.toString());
+			return true;
+		} catch (Exception e) {
+			//throw new RuntimeException(e);
+			return  false;
+		}
+
+	}
 }

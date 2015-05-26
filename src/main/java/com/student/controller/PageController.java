@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.student.entity.StudentInfo;
 import com.student.entity.Users;
 import com.student.service.UsersService;
 
@@ -128,22 +129,17 @@ public class PageController {
 		return "about_control/add_historydata";
 	}
 	
-	
+	//登陆验证
 	@RequestMapping("/login_verify")
 	public void  usersVerify(Users users,HttpServletResponse response) throws IOException{
 		int purview=userservice.hasUser(users);
-		String toPage=null;
-		if(purview==0){
-			//您的权限是管理员
-			toPage="admin_page";
-		}else if (purview==1) {
-			//您的权限是普通用户
-			toPage="index";
-		}else {
-			//您的账号或密码错误
-			toPage="login";
-		}
 		response.getWriter().write(purview+"");
-		
+	}
+	
+	//添加学生信息处理
+	@RequestMapping("/addStudentInfo")
+	public void addStudentInfo(StudentInfo studentInfo){
+		boolean flag=false;
+				flag=userservice.addStudentInfo(studentInfo);
 	}
 }

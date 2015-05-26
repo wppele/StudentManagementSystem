@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.student.dao.UsersDao;
+import com.student.entity.StudentInfo;
 import com.student.entity.Users;
 
 @Service
@@ -28,6 +29,10 @@ public class UsersService {
 	@Transactional
 	public List<Users> findAll(){
 		return usersDao.findAll();
+	}
+	@Transactional(readOnly=false)
+	public boolean addStudentInfo(StudentInfo studentInfo){
+		 return usersDao.addStudentInfo(studentInfo);
 	}
 
 }
