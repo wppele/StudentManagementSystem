@@ -31,15 +31,13 @@ function addStudentInfo(){
 	var studentaddress=$('#stu-address').val();
 	var studentdescription=tinyMCE.activeEditor.getContent();
 	if(studentname==""||studentid==""||studentphone==""||parentphone==""){
-		alert("请将必填项填写完整后重新提交！");
+		alert("请将必填项填写完整后再提交！");
 	}else {
 		var studentInfo={stu_name:studentname,studentId:studentid,
 						 stu_sex:studentsex,//class_id:studentproclass,
+						 stu_telphone:studentphone,
 						 stu_parentphone:parentphone,stu_position:studentposition,
 						 stu_address:studentaddress,stu_description:studentdescription}
-/*		alert(studentname+studentid+" "+studentsex+" "+studentproclass+" "+
-				studentphone+" "+parentphone+" "+studentposition+" "+
-				studentaddress+" "+studentdescription);*/
 		$.ajax({
 			type:"Post",
 			url:"/StudentSystem/addStudentInfo",
@@ -48,7 +46,8 @@ function addStudentInfo(){
 				alert(message);
 			}
 		});
-		alert("admin.js------->ajax启动了");
+		alert("添加成功");
+		location.reload();
 	}
 
 }

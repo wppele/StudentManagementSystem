@@ -2,6 +2,7 @@ package com.student.dao;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,6 +16,7 @@ import com.student.util.StaticSql;
 
 @Repository
 public class UsersDao {
+	public static final Logger logger=Logger.getLogger(UsersDao.class);
 	@Autowired
 	private SessionFactory sessionFactory;
 	
@@ -46,7 +48,7 @@ public class UsersDao {
 		try {
 			Session addinfoSession=getCurSession();
 			addinfoSession.save(studentInfo);
-			System.out.println(studentInfo.toString());
+			logger.info(studentInfo.toString());
 			return true;
 		} catch (Exception e) {
 			//throw new RuntimeException(e);
