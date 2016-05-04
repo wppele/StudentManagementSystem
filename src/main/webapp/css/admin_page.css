@@ -1,7 +1,7 @@
 body{
 	float:left;
 	width:100%;
-	background:url("/StudentSystem/resources/black-Linen.png");
+	background:url("/resources/black-Linen.png");
 }
 .brand{
 	float:left;
@@ -51,9 +51,8 @@ a:HOVER,a:LINK{
 	border-top:1px solid #4d4d4d;
 	border-bottom:1px solid #0d0d0d;
 	background: #333333;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #343232), color-stop(1, #322828))
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #343232), color-stop(1, #322828));
     background: -ms-linear-gradient(bottom, #333333, #404040);
-    background: -moz-linear-gradient(center bottom, #333333 0%, #404040 100%);
     background: -o-linear-gradient(bottom, #333333, #404040);
     filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#404040',EndColorStr='#333333')";

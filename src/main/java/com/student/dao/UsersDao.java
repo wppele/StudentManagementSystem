@@ -19,31 +19,31 @@ public class UsersDao {
 	public static final Logger logger=Logger.getLogger(UsersDao.class);
 	@Autowired
 	private SessionFactory sessionFactory;
-	
+
 	public Session getCurSession(){
 		return sessionFactory.getCurrentSession();
 	}
 	public void addUser(Users users){
 		getCurSession().save(users);
 	}
-	//µÇÂ½ÑéÖ¤£¬Èç¹ûÓĞ´ËÕËºÅĞÅÏ¢Ôò·µ»ØÈ¨ÏŞ
+	//ç™»é™†éªŒè¯ï¼Œå¦‚æœæœ‰æ­¤è´¦å·ä¿¡æ¯åˆ™è¿”å›æƒé™
 	public int hasUser(Users users){
 		Query query=getCurSession().createQuery(StaticSql.PREVIEW_SQL);
 		query.setParameter("username",users.getUsername());
 		query.setParameter("password",users.getPassword());
-		 List<Users> usr=query.list();
-		 if(!usr.isEmpty()){
-			 return Integer.parseInt(usr.get(0).getPurview());
-		 }
+		List<Users> usr=query.list();
+		if(!usr.isEmpty()){
+			return Integer.parseInt(usr.get(0).getPurview());
+		}
 		return -1;
 	}
-	//¹ÜÀíÔ±Ò³ÃæÖĞ£¬ÓÃ»§²é¿´·µ»ØÓÃ»§ÁĞ±í
+	//ç®¡ç†å‘˜é¡µé¢ä¸­ï¼Œç”¨æˆ·æŸ¥çœ‹è¿”å›ç”¨æˆ·åˆ—è¡¨
 	public List<Users> findAll(){
 		Query query=getCurSession().createQuery(StaticSql.FINDALL_USERS_SQL);
 		List<Users> users_tmp=query.list();
 		return users_tmp;
 	}
-	//¹ÜÀíÔ±Ò³ÃæÖĞ£¬Ñ§ÉúĞÅÏ¢Ìí¼Ó
+	//ç®¡ç†å‘˜é¡µé¢ä¸­ï¼Œå­¦ç”Ÿä¿¡æ¯æ·»åŠ 
 	public boolean addStudentInfo(StudentInfo studentInfo){
 		try {
 			Session addinfoSession=getCurSession();

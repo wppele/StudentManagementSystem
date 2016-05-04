@@ -18,16 +18,16 @@ import com.student.service.UsersService;
 
 @Controller
 public class PageController {
-public static final Logger logger=Logger.getLogger(PageController.class);
+	public static final Logger logger=Logger.getLogger(PageController.class);
 	@Autowired
 	private UsersService userservice;
-	//登陆验证
+	//鐧婚檰楠岃瘉
 	@RequestMapping("/login_verify")
 	public void  usersVerify(Users users,HttpServletResponse response) throws IOException{
 		int purview=userservice.hasUser(users);
 		response.getWriter().write(purview+"");
 	}
-	//添加学生信息处理
+	//娣诲姞瀛︾敓淇℃伅澶勭悊
 	@RequestMapping("/addStudentInfo")
 	public void addStudentInfo(StudentInfo studentInfo){
 		boolean flag=userservice.addStudentInfo(studentInfo);

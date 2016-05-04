@@ -3,13 +3,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="zh-CN">
 <head>
-<link href="/StudentSystem/css/bootstrap.min.css" rel="stylesheet"
+<link href="/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
 <script type="text/javascript"
-	src="/StudentSystem/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="/StudentSystem/js/admin.js"></script>
+	src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
 <!-- 富文本加载js -->
-<script type="text/javascript" src="/StudentSystem/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" src="/js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript">
 tinymce.init({
     selector: "textarea"

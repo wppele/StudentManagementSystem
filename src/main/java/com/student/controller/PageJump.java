@@ -4,110 +4,110 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-//Ò³ÃæÌø×ª
+//é¡µé¢è·³è½¬
 @Controller
 public class PageJump {
 	public static final Logger logger=Logger.getLogger(PageJump.class);
-	//indexÒ³Ãæ
-		@RequestMapping("/index")
-		public String toindex(){
-			return "index";
-		}
-		//admin_pageÒ³Ãæ
-		@RequestMapping("/admin_page")
-		public String toAdmin_page(){
-			logger.info("this page has occourd!");
-			return "admin_page";
-		}
-		//login
-		@RequestMapping("/login")
-		public String tologin(){
-			return "login";
-		}
-		//Ìí¼ÓÓÃ»§
-		@RequestMapping("/add_user")
-		public String adduser(){
-			return "about_control/add_user";
-		}
-		//²é¿´²¿ÃÅ!
-		@RequestMapping("/show_department")
-		public String showDepartment(){
-			return "about_control/show_department";
-		}
-		//Ìí¼Ó²¿ÃÅ!
-		@RequestMapping("/add_department")
-		public String addDepartment(){
-			return "about_control/add_department";
-		}
-		//×¨Òµ°à¼¶²é¿´!
-		@RequestMapping("/show_proclass")
-		public String showProclass(){
-			return "about_control/show_proclass";
-		}
-		//×¨Òµ°à¼¶Ìí¼Ó!
-		@RequestMapping("/add_proclass")
-		public String addProclass(){
-			return "about_control/add_proclass";
-		}
-		//Ñ§ÉúĞÅÏ¢²é¿´!
-		@RequestMapping("/show_studentinfo")
-		public String showStudentInfo(){
-			return "about_control/show_studentinfo";
-		}
-		//Ñ§ÉúĞÅÏ¢Ìí¼Ó!
-		@RequestMapping("/add_studentinfo")
-		public String addstuInfo(){
-			return "about_control/add_studentinfo";
-		}
-		//Îï×Ê²é¿´!
-		@RequestMapping("/show_goods")
-		public String showGoods(){
-			return "about_control/show_goods";
-		}
-		//Îï×ÊÌí¼Ó!
-		@RequestMapping("/add_goods")
-		public String addGoods(){
-			return "about_control/add_goods";
-		}
-		//Îï×ÊÉêÇëÍ¨Öª!
-		@RequestMapping("/notice_goods")
-		public String noticeGoods(){
-			return "about_control/notice_goods";
-		}
-		//Îï×ÊÈÕÖ¾!
-		@RequestMapping("/log_goods")
-		public String logGoods(){
-			return "about_control/log_goods";
-		}
-		//Öµ°à±í²é¿´!
-		@RequestMapping("/show_dutyschedule")
-		public String showDutyschedule(){
-			return "about_control/show_dutyschedule";
-		}
-		//Öµ°à±íÉÏ´«!
-		@RequestMapping("/add_dutyschedule")
-		public String addDutyschedule(){
-			return "about_control/add_dutyschedule";
-		}
-		//»áÒé¼ÍÒª²é¿´!
-		@RequestMapping("/show_meetingsummary")
-		public String showMettingsummary(){
-			return "about_control/show_meetingsummary";
-		}
-		//»áÒé¼ÍÒªÉÏ´«!
-		@RequestMapping("/add_meetingsummary")
-		public String addMeetingsummary(){
-			return "about_control/add_meetingsummary";
-		}
-		//×ÊÁÏ²é¿´
-		@RequestMapping("/show_historydata")
-		public String showHistorydata(){
-			return "about_control/show_historydata";
-		}
-		//ÉÏ´«×ÊÁÏ
-		@RequestMapping("/add_historydata")
-		public String addHistorydata(){
-			return "about_control/add_historydata";
-		}
-		
+	//indexé¡µé¢
+	@RequestMapping("/index")
+	public String toindex(){
+		return "index";
+	}
+	//admin_pageé¡µé¢
+	@RequestMapping("/admin_page")
+	public String toAdmin_page(){
+		logger.info("this page has occourd!");
+		return "admin_page";
+	}
+	//login
+	@RequestMapping("/login")
+	public String tologin(){
+		return "login";
+	}
+	//æ·»åŠ ç”¨æˆ·
+	@RequestMapping("/add_user")
+	public String adduser(){
+		return "about_control/add_user";
+	}
+	//æŸ¥çœ‹éƒ¨é—¨!
+	@RequestMapping("/show_department")
+	public String showDepartment(){
+		return "about_control/show_department";
+	}
+	//æ·»åŠ éƒ¨é—¨!
+	@RequestMapping("/add_department")
+	public String addDepartment(){
+		return "about_control/add_department";
+	}
+	//ä¸“ä¸šç­çº§æŸ¥çœ‹!
+	@RequestMapping("/show_proclass")
+	public String showProclass(){
+		return "about_control/show_proclass";
+	}
+	//ä¸“ä¸šç­çº§æ·»åŠ !
+	@RequestMapping("/add_proclass")
+	public String addProclass(){
+		return "about_control/add_proclass";
+	}
+	//å­¦ç”Ÿä¿¡æ¯æŸ¥çœ‹!
+	@RequestMapping("/show_studentinfo")
+	public String showStudentInfo(){
+		return "about_control/show_studentinfo";
+	}
+	//å­¦ç”Ÿä¿¡æ¯æ·»åŠ !
+	@RequestMapping("/add_studentinfo")
+	public String addstuInfo(){
+		return "about_control/add_studentinfo";
+	}
+	//ç‰©èµ„æŸ¥çœ‹!
+	@RequestMapping("/show_goods")
+	public String showGoods(){
+		return "about_control/show_goods";
+	}
+	//ç‰©èµ„æ·»åŠ !
+	@RequestMapping("/add_goods")
+	public String addGoods(){
+		return "about_control/add_goods";
+	}
+	//ç‰©èµ„ç”³è¯·é€šçŸ¥!
+	@RequestMapping("/notice_goods")
+	public String noticeGoods(){
+		return "about_control/notice_goods";
+	}
+	//ç‰©èµ„æ—¥å¿—!
+	@RequestMapping("/log_goods")
+	public String logGoods(){
+		return "about_control/log_goods";
+	}
+	//å€¼ç­è¡¨æŸ¥çœ‹!
+	@RequestMapping("/show_dutyschedule")
+	public String showDutyschedule(){
+		return "about_control/show_dutyschedule";
+	}
+	//å€¼ç­è¡¨ä¸Šä¼ !
+	@RequestMapping("/add_dutyschedule")
+	public String addDutyschedule(){
+		return "about_control/add_dutyschedule";
+	}
+	//ä¼šè®®çºªè¦æŸ¥çœ‹!
+	@RequestMapping("/show_meetingsummary")
+	public String showMettingsummary(){
+		return "about_control/show_meetingsummary";
+	}
+	//ä¼šè®®çºªè¦ä¸Šä¼ !
+	@RequestMapping("/add_meetingsummary")
+	public String addMeetingsummary(){
+		return "about_control/add_meetingsummary";
+	}
+	//èµ„æ–™æŸ¥çœ‹
+	@RequestMapping("/show_historydata")
+	public String showHistorydata(){
+		return "about_control/show_historydata";
+	}
+	//ä¸Šä¼ èµ„æ–™
+	@RequestMapping("/add_historydata")
+	public String addHistorydata(){
+		return "about_control/add_historydata";
+	}
+
 }

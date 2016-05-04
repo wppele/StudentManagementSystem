@@ -20,6 +20,7 @@ $(document).ready(function(){
 		$('.dropdown-menu').hide();
 	});
 });
+//添加用户
 function addStudentInfo(){
 	var studentname=$('#stu-name').val();
 	var studentid=$('#stu-id').val();
@@ -40,7 +41,7 @@ function addStudentInfo(){
 						 stu_address:studentaddress,stu_description:studentdescription}
 		$.ajax({
 			type:"Post",
-			url:"/StudentSystem/addStudentInfo",
+			url:"/addStudentInfo",
 			data:studentInfo,
 			success:function(msg){
 				alert(message);
@@ -49,5 +50,10 @@ function addStudentInfo(){
 		alert("添加成功");
 		location.reload();
 	}
-
+}
+//页面跳转
+function pageLoad(e){
+	if(e=='zmb'){
+		$('#context-show').load("/show_department");
+	}
 }

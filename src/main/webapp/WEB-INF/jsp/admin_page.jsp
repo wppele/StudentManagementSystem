@@ -5,13 +5,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link href="/StudentSystem/css/bootstrap.min.css" rel="stylesheet"
+<link href="/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
-<link href="/StudentSystem/css/admin_page.css" rel="stylesheet"
+<link href="/css/admin_page.css" rel="stylesheet"
 	type="text/css" />
-<script type="text/javascript" src="/StudentSystem/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="/StudentSystem/js/admin.js"></script>
-<title>计算机科学系学生会管理系统</title>
+<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/js/admin.js"></script>
+<title>中国铁塔工单服务系统</title>
 </head>
 <body>
 <div id="container-fluid">
@@ -38,51 +38,40 @@
 	<!-- 左边导航栏 -->
 	<div id="sidebar-nav">
 		<input type="text" class="form-control" placeholder="搜索....">
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-th-list"></span>&nbsp用户管理</div>
+		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-th-list"></span>&nbsp信息技术研究院</div>
 		<ul id="about-menu" class="nav nav-list collapse in">
-            <li><a href="/StudentSystem/show_user" target="show_Content">查看用户</a></li>
-            <li><a href="/StudentSystem/add_user" target="show_Content">添加用户</a></li>
+            <li><a  href="javascript:void(0);" onclick=pageLoad("zmb") >主面板</a></li>
         </ul>
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-th"></span>&nbsp部门管理</div>
+		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-th"></span>&nbsp工单</div>
 		<ul id="part-menu" class="nav nav-list collapse in">
-            <li><a href="/StudentSystem/show_department" target="show_Content">查看部门</a></li>
-            <li><a href="/StudentSystem/add_department" target="show_Content">添加部门</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>队列视图</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>状态视图</a></li>
+			<li><a href="javascript:void(0);" onclick=pageLoad("zmb")>搜索工单</a></li>
         </ul>
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-education"></span> &nbsp专业班级管理</div>
+		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-education"></span> &nbspFAQ知识库</div>
 		<ul id="member-menu" class="nav nav-list collapse in">
-            <li><a href="/StudentSystem/show_proclass" target="show_Content">专业班级信息查看</a></li>
-            <li><a href="/StudentSystem/add_proclass" target="show_Content">添加专业班级</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>浏览</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>新建</a></li>
+			<li><a href="javascript:void(0);" onclick=pageLoad("zmb")>管理类别</a></li>
+			<li><a href="javascript:void(0);" onclick=pageLoad("zmb")>搜索</a></li>
         </ul>
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-blackboard"></span> &nbsp学生信息管理</div>
+		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-blackboard"></span> &nbsp用户单位管理</div>
 		<ul id="studentinfo-menu" class="nav nav-list collapse in">
-            <li><a href="/StudentSystem/show_studentinfo" target="show_Content">学生信息查看</a></li>
-            <li><a href="/StudentSystem/add_studentinfo" target="show_Content">新添学生信息</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>用户信息中心</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>用户管理</a></li>
+			<li><a href="javascript:void(0);" onclick=pageLoad("zmb")>用户单位管理</a></li>
         </ul>
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-scissors"></span> &nbsp物资管理</div>
+		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-scissors"></span> &nbsp系统设置</div>
 		<ul id="life-menu" class="nav nav-list collapse in">
-            <li><a href="/StudentSystem/show_goods" target="show_Content">物资查看</a></li>
-            <li><a href="/StudentSystem/add_goods" target="show_Content">物资添加</a></li>
-            <li><a href="/StudentSystem/notice_goods" target="show_Content">物资申请通知</a></li>
-            <li><a href="/StudentSystem/log_goods" target="show_Content">物资日志</a></li>
+            <li><a href="javascript:void(0);" onclick=pageLoad("zmb")>系统管理</a></li>
         </ul>
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-tree-deciduous"></span> &nbsp学生会日常工作</div>
-		<ul id="goods-menu" class="nav nav-list collapse in">
-            <li><a href="/StudentSystem/show_dutyschedule" target="show_Content">值班表查看</a></li>
-            <li><a href="/StudentSystem/add_dutyschedule" target="show_Content">值班表上传</a></li>
-            <li><a href="/StudentSystem/show_meetingsummary" target="show_Content">会议纪要查看</a></li>
-            <li><a href="/StudentSystem/add_meetingsummary" target="show_Content">会议纪要上传</a></li>
-        </ul>
-		<div class="sidebar-title" role="button"><span class="glyphicon glyphicon-floppy-disk"></span> &nbsp资料库管理</div>
-		<ul id="data-menu" class="nav nav-list collapse in">
-            <li><a href="#" target="show_Content">资料类别</a></li>
-            <li><a href="/StudentSystem/show_historydata" target="show_Content">查看资料</a></li>
-            <li><a href="/StudentSystem/add_historydata" target="show_Content">上传资料</a></li>
-        </ul>
+
 	</div>	
 	<div id="context-show" class="panel panel-default" >
-		<iframe name="show_Content" class="show_Content">
+<%--		<iframe name="show_Content" class="show_Content">
 			请升级浏览器后重新打开此页面
-		</iframe>
+		</iframe>--%>
+		aaaaaaaaaa
 	</div>
 </div>
 </body>
