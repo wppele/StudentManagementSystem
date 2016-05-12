@@ -5,30 +5,27 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name="tb_stu_info")
 public class StudentInfo implements Serializable{
 
 private static final long serialVersionUID = 1L;
-//private String stu_id;//Ö÷¼ü
+//private String stu_id;//ï¿½ï¿½ï¿½ï¿½
 private int stu_id;
-private String studentId;//Ñ§ºÅ
-private String stu_name;//ÐÕÃû
-private long class_id;//×¨Òµ°à¼¶
-private String stu_telphone;//ÁªÏµ·½Ê½
-private String stu_parentphone;//¸¸Ä¸ÁªÏµ·½Ê½
-private String stu_sex;//ÐÔ±ð
-private String stu_picture;//ÕÕÆ¬Â·¾¶
+private String studentId;//Ñ§ï¿½ï¿½
+private String stu_name;//ï¿½ï¿½ï¿½ï¿½
+private long class_id;//×¨Òµï¿½à¼¶
+private String stu_telphone;//ï¿½ï¿½Ïµï¿½ï¿½Ê½
+private String stu_parentphone;//ï¿½ï¿½Ä¸ï¿½ï¿½Ïµï¿½ï¿½Ê½
+private String stu_sex;//ï¿½Ô±ï¿½
+private String stu_picture;//ï¿½ï¿½Æ¬Â·ï¿½ï¿½
 private String stu_position;//Ö°Î»
-private String stu_address;//¼ÒÍ¥×¡Ö·
-private String stu_description;//ÆäËûÃèÊö
-private String stu_note;//±¸×¢
+private String stu_address;//ï¿½ï¿½Í¥×¡Ö·
+private String stu_description;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+private String stu_note;//ï¿½ï¿½×¢
 @Id
 /*@GeneratedValue(generator="idGenerator")
 @GenericGenerator(name="idGenerator",strategy="org.hibernate.id.UUIDGenerator")

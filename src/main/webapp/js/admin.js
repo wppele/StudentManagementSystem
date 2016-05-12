@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$('#dropdown-toggle').click(function(){
 		$('.dropdown-menu').toggle();
 	});
@@ -54,6 +55,39 @@ function addStudentInfo(){
 //页面跳转
 function pageLoad(e){
 	if(e=='zmb'){
-		$('#context-show').load("/show_department");
+		$('#context-show').load("/panel");
+	}
+	if(e=='qv'){
+		$('#context-show').load("/queue_view");
+	}
+	if(e=='sv'){
+		$('#context-show').load("/state_view");
+	}
+	if(e=='st'){
+		$('#context-show').load("/search_ticket");
+	}
+	if(e=='ba'){
+		$('#context-show').load("/browse_articles");
+	}
+	if(e=='nf'){
+		$('#context-show').load("/new_faq");
+	}
+	if(e=='fc'){
+		$('#context-show').load("/faq_class");
+	}
+	if(e=='sf'){
+		$('#context-show').load("/search_faq");
+	}
+	if(e=='ui'){
+		$('#context-show').load("/user_info");
+	}
+	if(e=='um'){
+		$('#context-show').load("/user_manager");
+	}
+	if(e=='uc'){
+		$('#context-show').load("/user_company");
+	}
+	if(e=='sm'){
+		$('#context-show').load("/system_manager");
 	}
 }

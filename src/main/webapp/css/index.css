@@ -51,11 +51,11 @@ a:HOVER,a:LINK{
 	border-top:1px solid #4d4d4d;
 	border-bottom:1px solid #0d0d0d;
 	background: #333333;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #343232), color-stop(1, #322828));
-    background: -ms-linear-gradient(bottom, #333333, #404040);
-    background: -o-linear-gradient(bottom, #333333, #404040);
-    filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#404040',EndColorStr='#333333')";
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #343232), color-stop(1, #322828));
+	background: -ms-linear-gradient(bottom, #333333, #404040);
+	background: -o-linear-gradient(bottom, #333333, #404040);
+	filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#404040',EndColorStr='#333333')";
 }
 #sidebar-nav input{
 	margin-bottom:0.5em;
@@ -74,7 +74,7 @@ a:HOVER,a:LINK{
 /* Tweaks for mobile */
 @media (max-width: 745px) {
 	#sidebar-nav{
-	width:100%;
+		width:100%;
 	}
 	#context-show{
 		float:right;
@@ -82,5 +82,43 @@ a:HOVER,a:LINK{
 		margin-right:-0.1em;
 		width:100%;
 	}
-	
+}
+/*用户页面首页*/
+#top{
+	float:left;
+	width:100%;
+	height:80px;
+	background:url("/resources/box-Red-bg.gif"),repeat-x;
+}
+#company_logo{
+	float:left;
+	width:126px;
+	height:44px;
+	margin-top:20px;
+	margin-left:2em;
+	background:url("/resources/company_logo.png");
+}
+#form_search{
+	float:right;
+	width:auto;
+	height:auto;
+	margin-top:20px;
+	margin-right:2em;
+}
+
+#content{
+	float:left;
+	width:94%;
+	height:729px;
+	margin-left:3%;
+	margin-top:2em;
+	background: #fffcf3;
+}
+#fast_link{
+	margin-top:4em;
+}
+#fast_link img{
+	width:50px;
+	height:50px;
+	margin-left: 200px;;
 }

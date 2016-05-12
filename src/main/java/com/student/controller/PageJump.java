@@ -24,90 +24,92 @@ public class PageJump {
 	public String tologin(){
 		return "login";
 	}
-	//添加用户
-	@RequestMapping("/add_user")
-	public String adduser(){
-		return "about_control/add_user";
+	//查找faq
+	@RequestMapping("/search_faq")
+	public String searchfaq(){
+		return "about_control/search_faq";
 	}
-	//查看部门!
-	@RequestMapping("/show_department")
-	public String showDepartment(){
-		return "about_control/show_department";
+	//用户信息!
+	@RequestMapping("/user_info")
+	public String userinfo(){
+		return "about_control/user_info";
 	}
-	//添加部门!
-	@RequestMapping("/add_department")
-	public String addDepartment(){
-		return "about_control/add_department";
+	//初始面板!
+	@RequestMapping("/panel")
+	public String panel(){
+		return "about_control/panel";
 	}
-	//专业班级查看!
-	@RequestMapping("/show_proclass")
-	public String showProclass(){
-		return "about_control/show_proclass";
+	//新建FAQ文章!
+	@RequestMapping("/new_faq")
+	public String newfaq(){
+		return "about_control/new_faq";
 	}
-	//专业班级添加!
-	@RequestMapping("/add_proclass")
-	public String addProclass(){
-		return "about_control/add_proclass";
+	//FAQ类别管理!
+	@RequestMapping("/faq_class")
+	public String useradd(){
+		return "about_control/user_add";
 	}
-	//学生信息查看!
-	@RequestMapping("/show_studentinfo")
-	public String showStudentInfo(){
-		return "about_control/show_studentinfo";
+	//用户单位!
+	@RequestMapping("/user_company")
+	public String usercompany(){
+		return "about_control/user_company";
 	}
-	//学生信息添加!
-	@RequestMapping("/add_studentinfo")
-	public String addstuInfo(){
-		return "about_control/add_studentinfo";
-	}
-	//物资查看!
-	@RequestMapping("/show_goods")
-	public String showGoods(){
-		return "about_control/show_goods";
-	}
-	//物资添加!
-	@RequestMapping("/add_goods")
-	public String addGoods(){
-		return "about_control/add_goods";
-	}
-	//物资申请通知!
-	@RequestMapping("/notice_goods")
-	public String noticeGoods(){
-		return "about_control/notice_goods";
-	}
-	//物资日志!
-	@RequestMapping("/log_goods")
-	public String logGoods(){
-		return "about_control/log_goods";
-	}
-	//值班表查看!
-	@RequestMapping("/show_dutyschedule")
-	public String showDutyschedule(){
-		return "about_control/show_dutyschedule";
-	}
-	//值班表上传!
-	@RequestMapping("/add_dutyschedule")
-	public String addDutyschedule(){
-		return "about_control/add_dutyschedule";
-	}
-	//会议纪要查看!
-	@RequestMapping("/show_meetingsummary")
-	public String showMettingsummary(){
-		return "about_control/show_meetingsummary";
-	}
-	//会议纪要上传!
-	@RequestMapping("/add_meetingsummary")
-	public String addMeetingsummary(){
-		return "about_control/add_meetingsummary";
-	}
-	//资料查看
-	@RequestMapping("/show_historydata")
-	public String showHistorydata(){
-		return "about_control/show_historydata";
-	}
-	//上传资料
-	@RequestMapping("/add_historydata")
-	public String addHistorydata(){
-		return "about_control/add_historydata";
+	//状态视图!
+	@RequestMapping("/state_view")
+	public String stateview(){
+		return "about_control/state_view";
 	}
 
+	//用户管理!
+	@RequestMapping("/user_manager")
+	public String usermanager(){
+		return "about_control/user_manager";
+	}
+	//队列视图!
+	@RequestMapping("/queue_view")
+	public String queueview(){
+		return "about_control/queue_view";
+	}
+	//浏览FAQ文章
+	@RequestMapping("/browse_articles")
+	public String browsearticles(){
+		return "about_control/browse_articles";
+	}
+	//系统管理
+	@RequestMapping("/system_manager")
+	public String systemmanager(){
+		return "about_control/system_manager";
+	}
+	//查找工单
+	@RequestMapping("/search_ticket")
+	public String searchticket(){
+		return "about_control/search_ticket";
+	}
+	//管理人员页面结束
+	//用户页面开始
+	//用户主界面
+	@RequestMapping("/customer_index")
+	public String customer_index(){
+		return "about_customer/index";
+	}
+	//提交工单
+	@RequestMapping("/submit_ticket")
+	public String submit_ticket(){
+		return "about_customer/submit_ticket";
+	}
+	//历史工单
+	@RequestMapping("/history_ticket")
+	public String history_ticket(){
+		return "about_customer/history_ticket";
+	}
+	//我的资料
+	@RequestMapping("/my_account")
+	public String my_account(){
+		return "about_customer/my_account";
+	}
+	//FAQ展示
+	@RequestMapping("/show_faq")
+	public String show_faq(){
+		return "about_customer/show_faq";
+	}
 }

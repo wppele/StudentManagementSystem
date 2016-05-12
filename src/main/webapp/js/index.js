@@ -7,3 +7,21 @@ $(document).ready(function(){
 		$(this).next().show();
 	});
 });
+//页面跳转
+function pageLoad(e){
+	if(e=='ix'){
+		$('#context-show').load("/customer_index");
+	}
+	if(e=='st'){
+		$('#context-show').load("/submit_ticket");
+	}
+	if(e=='sf'){
+		$('#context-show').load("/show_faq");
+	}
+	if(e=='ht'){
+		$('#context-show').load("/history_ticket");
+	}
+	if(e=='ma'){
+		$('#context-show').load("/my_account");
+	}
+}
