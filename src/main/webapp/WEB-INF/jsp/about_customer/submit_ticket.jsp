@@ -27,70 +27,25 @@
 	<div id="content">
 		<div id="add_part">
 			<div class="input-group">
-				<span class="input-group-addon">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp姓名</span>
-				<input type="text" class="form-control" placeholder="学生姓名(必填)"
+				<span class="input-group-addon">类型</span>
+				<input type="text" class="form-control" placeholder="类型"
 					   aria-describedby="basic-addon1" id="stu-name">
 			</div>
 			<br>
 			<div class="input-group">
-				<span class="input-group-addon">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学号</span>
-				<input type="text" class="form-control" placeholder="学号(必填)"
+				<span class="input-group-addon">收件人</span>
+				<input type="text" class="form-control" placeholder="收件人"
 					   aria-describedby="basic-addon1" id="stu-id">
 			</div>
 			<br>
 			<div class="input-group">
-				<span class="input-group-addon">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp性别</span>
-				<input type="radio" name="stu_sex" checked="checked" value="1">男 <input
-					type="radio" name="stu_sex" value="0">女
+				<span class="input-group-addon">主题</span> <input type="text"
+																   class="form-control" placeholder="主题"
+																   aria-describedby="basic-addon1">
 			</div>
 			<br>
 			<div class="input-group">
-				<span class="input-group-addon">专业班级</span>
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle" type="button"
-							id="dropdownMenu2">
-						点击选择专业班级
-					</button>
-					<ul class="dropdown-menu" role="menu">
-						<li role="presentation" class="class-chooice"><a role="menuitem"
-																		 href="#">软件工程1201</a></li>
-						<li role="presentation" class="class-chooice"><a role="menuitem"
-																		 href="#">软件工程1202</a></li>
-						<li role="presentation" class="class-chooice"><a role="menuitem"
-																		 href="#">软件工程1301</a></li>
-						<li role="presentation" class="class-chooice"><a role="menuitem"
-																		 href="#">软件工程1302</a></li>
-					</ul>
-				</div>
-
-			</div>
-			<br>
-			<div class="input-group">
-				<span class="input-group-addon">联系电话</span> <input type="text"
-																   class="form-control" placeholder="学生联系电话(必填)"
-																   aria-describedby="basic-addon1" id="stu-telphone">
-			</div>
-			<br>
-			<div class="input-group">
-				<span class="input-group-addon">父母电话</span> <input type="text"
-																   class="form-control" placeholder="父亲或母亲联系方式(必填)"
-																   aria-describedby="basic-addon1" id="stu-parentphone">
-			</div>
-			<br>
-			<div class="input-group">
-				<span class="input-group-addon">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp职位</span>
-				<input type="text" class="form-control" placeholder=" 此时院系或班级职位"
-					   aria-describedby="basic-addon1" id="stu-position">
-			</div>
-			<br>
-			<div class="input-group">
-				<span class="input-group-addon">家庭住址</span> <input type="text"
-																   class="form-control" placeholder="家庭住址具体到市如（河北省黄骅市）"
-																   aria-describedby="basic-addon1" id="stu-address">
-			</div>
-			<br>
-			<div class="input-group">
-				<span class="input-group-addon">个人描述</span>
+				<span class="input-group-addon">正文</span>
 				<textarea id="stu-description">
 				</textarea>
 			</div>
