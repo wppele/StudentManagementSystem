@@ -6,6 +6,10 @@
 <head>
 <link href="/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
+	<script type="javascript" src="/js/tinymce/tinymce.min.js"></script>
+	<script>
+		tinymce.init({selector:'textarea'});
+	</script>
 <style type="text/css">
 	body{
 		margin:0;
@@ -28,25 +32,34 @@
 		<div id="add_part">
 			<div class="input-group">
 				<span class="input-group-addon">类型</span>
-				<input type="text" class="form-control" placeholder="类型"
-					   aria-describedby="basic-addon1" id="stu-name">
+				<select class="form-control">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
 			</div>
 			<br>
 			<div class="input-group">
 				<span class="input-group-addon">收件人</span>
-				<input type="text" class="form-control" placeholder="收件人"
-					   aria-describedby="basic-addon1" id="stu-id">
+				<select class="form-control">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
 			</div>
 			<br>
 			<div class="input-group">
-				<span class="input-group-addon">主题</span> <input type="text"
-																   class="form-control" placeholder="主题"
-																   aria-describedby="basic-addon1">
+				<span class="input-group-addon">主题</span>
+				<input type="text" class="form-control" placeholder="主题" aria-describedby="basic-addon1">
 			</div>
 			<br>
 			<div class="input-group">
 				<span class="input-group-addon">正文</span>
-				<textarea id="stu-description">
+				<textarea id="stu-description" rows="15" cols="80" style="width:100%;">
 				</textarea>
 			</div>
 			<input type="button" value="提交" class="btn btn-primary" onclick="addStudentInfo()">
